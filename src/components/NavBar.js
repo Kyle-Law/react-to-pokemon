@@ -19,8 +19,8 @@ export default function NavBar() {
           </NavLink>
         </button>
         <button className="ui button">
-          <NavLink exact to="/contact">
-            Contact
+          <NavLink exact to="/connect">
+            Connect
           </NavLink>
         </button>
       </div>

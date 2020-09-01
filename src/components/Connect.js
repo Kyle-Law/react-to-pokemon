@@ -1,13 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export default function Contact() {
+export default function Connect() {
   return (
     <div
       className="ui raised very padded text container segment"
       style={{ marginTop: "80px" }}
     >
-      <h3 className="ui header">Contact</h3>
+      <h3 className="ui header">Connect</h3>
       <div className="social-media-container">
         <Link
           className=""

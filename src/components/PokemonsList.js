@@ -64,9 +64,14 @@ function PokemonsList({
         <Filter onFilter={onFilter} season={season} />
       </div>
       <div className="card-container">
-        {filtered(pokemons, search, season).map((pokemon) => (
-          <Card key={pokemon.id} pokemon={pokemon} />
-        ))}
+        {console.log(pokemons)}
+        {pokemons[0] ? (
+          filtered(pokemons, search, season).map((pokemon) => (
+            <Card key={pokemon.id} pokemon={pokemon} />
+          ))
+        ) : (
+          <h2>Loading...</h2>
+        )}
       </div>
     </div>
   );
