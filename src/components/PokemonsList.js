@@ -1,14 +1,14 @@
-import React, { useEffect } from "react";
-import PropTypes from "prop-types";
-import { connect } from "react-redux";
-import Card from "./Card";
-import Search from "./Search";
-import Filter from "./Filter";
+import React, { useEffect } from 'react';
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+import Card from './Card';
+import Search from './Search';
+import Filter from './Filter';
 import {
   fetchPokemons,
   handleSearch,
   handleFilter,
-} from "../actions/pokemonActions";
+} from '../actions/pokemonActions';
 
 function PokemonsList({
   pokemons,
@@ -20,7 +20,7 @@ function PokemonsList({
 }) {
   useEffect(() => {
     fetchPokemons();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line
   }, []);
 
   function onChange(e) {
@@ -30,31 +30,32 @@ function PokemonsList({
 
   function onFilter(e) {
     const input = e.target.value;
-    console.log(input);
     handleFilter(input);
   }
 
-  const filterSearch = (pokemonArray, searchInput) =>
-    pokemonArray.filter((p) => p.name.includes(searchInput));
+  // eslint-disable-next-line max-len
+  const filterSearch = (pokemonArray, searchInput) => pokemonArray.filter(p => p.name.includes(searchInput));
 
   const filterSeason = (array, season) => {
-    if (season === "1") {
-      array = array.filter((p) => p.id <= 151);
-    }
-    if (season === "2") {
-      array = array.filter((p) => p.id > 151 && p.id <= 251);
-    }
-    if (season === "3") {
-      array = array.filter((p) => p.id > 251);
+    let newArray;
+    if (season === '1') {
+      newArray = array.filter(p => p.id <= 151);
+    } else if (season === '2') {
+      newArray = array.filter(p => p.id > 151 && p.id <= 251);
+    } else if (season === '3') {
+      newArray = array.filter(p => p.id > 251);
+    } else {
+      newArray = array;
     }
 
-    return array;
+    return newArray;
   };
 
   function filtered(pokemonArray, searchInput, season) {
-    pokemonArray = filterSeason(pokemonArray, season);
-    pokemonArray = filterSearch(pokemonArray, searchInput);
-    return pokemonArray;
+    let newArray;
+    newArray = filterSeason(pokemonArray, season);
+    newArray = filterSearch(newArray, searchInput);
+    return newArray;
   }
 
   return (
@@ -64,9 +65,8 @@ function PokemonsList({
         <Filter onFilter={onFilter} season={season} />
       </div>
       <div className="card-container">
-        {console.log(pokemons)}
         {pokemons[0] ? (
-          filtered(pokemons, search, season).map((pokemon) => (
+          filtered(pokemons, search, season).map(pokemon => (
             <Card key={pokemon.id} pokemon={pokemon} />
           ))
         ) : (
@@ -78,26 +78,24 @@ function PokemonsList({
 }
 
 PokemonsList.propTypes = {
-  pokemons: PropTypes.array.isRequired,
+  pokemons: PropTypes.arrayOf(Object).isRequired,
   fetchPokemons: PropTypes.func.isRequired,
   handleSearch: PropTypes.func.isRequired,
   handleFilter: PropTypes.func.isRequired,
-  search: PropTypes.string,
-  season: PropTypes.string,
+  search: PropTypes.string.isRequired,
+  season: PropTypes.string.isRequired,
 };
 
-const mapStateToProps = (state) => ({
+const mapStateToProps = state => ({
   pokemons: state.pokemons,
   search: state.search,
   season: state.season,
 });
 
-const mapDispatchToProps = () => {
-  return {
-    fetchPokemons,
-    handleSearch,
-    handleFilter,
-  };
-};
+const mapDispatchToProps = () => ({
+  fetchPokemons,
+  handleSearch,
+  handleFilter,
+});
 
 export default connect(mapStateToProps, mapDispatchToProps())(PokemonsList);

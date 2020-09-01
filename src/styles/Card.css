@@ -33,6 +33,10 @@ nav {
   font-size: 1.3rem;
 }
 
+.season-filter label select {
+  margin-left: 10px;
+}
+
 .card-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, 150px);
@@ -48,7 +52,7 @@ nav {
   background-color: wheat;
   padding: 10px;
   border-radius: 5px;
-  box-shadow: -8px 7px 15px 0px rgba(0, 0, 0, 0.54);
+  box-shadow: -8px 7px 15px 0 rgba(0, 0, 0, 0.54);
   transition: 0.2s;
 }
 
@@ -87,6 +91,7 @@ footer {
   .ui.inverted.teal.segment {
     display: none;
   }
+
   .filters-container {
     display: flex;
   }

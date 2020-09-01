@@ -1,8 +1,10 @@
 # React to Pokémon
 
-> A simple pokémon catelogue built by React & Redux with [PokeAPI](https://pokeapi.co/)
+> A simple pokémon catelog from season 1-3, built with React & Redux and [PokeAPI](https://pokeapi.co/)
 
 User can search or filter pokémon based on season (only 3 seasons are included)
+
+## Snapshots
 
 ![image](https://user-images.githubusercontent.com/55923773/91823637-1cadd980-ec6c-11ea-9b36-9565b394ff95.png)
 

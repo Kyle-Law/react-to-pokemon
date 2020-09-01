@@ -1,5 +1,6 @@
-import React from "react";
-import { Link, NavLink } from "react-router-dom";
+/* eslint-disable react/button-has-type */
+import React from 'react';
+import { Link, NavLink } from 'react-router-dom';
 
 export default function NavBar() {
   return (
