@@ -5,6 +5,7 @@ import Pokemon from "./components/Pokemon";
 import NavBar from "./components/NavBar";
 import About from "./components/About";
 import Contact from "./components/Contact";
+import NotFound from "./components/NotFound";
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
           <Route exact path="/" component={PokemonsList} />
           <Route exact path="/about" component={About} />
           <Route exact path="/contact" component={Contact} />
-          <Route path="/:id" component={Pokemon} />
+          <Route path="/pokemon/:id" component={Pokemon} />
+          <Route component={NotFound} />
         </Switch>
       </div>
     </BrowserRouter>

@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 export default function NavBar() {
   return (
@@ -9,13 +9,19 @@ export default function NavBar() {
       </Link>
       <div className="ui right floated header">
         <button className="ui button">
-          <Link to="/">Home</Link>
+          <NavLink exact to="/">
+            Home
+          </NavLink>
         </button>
         <button className="ui button">
-          <Link to="/about">About</Link>
+          <NavLink exact to="/about">
+            About
+          </NavLink>
         </button>
         <button className="ui button">
-          <Link to="/contact">Contact</Link>
+          <NavLink exact to="/contact">
+            Contact
+          </NavLink>
         </button>
       </div>
     </nav>

@@ -5,7 +5,7 @@ import "../styles/Card.css";
 
 export default function Card({ pokemon }) {
   return (
-    <Link to={`/${pokemon.id}`} className="pokemon-card">
+    <Link to={`/pokemon/${pokemon.id}`} className="pokemon-card">
       <img
         src={`https://pokeres.bastionbot.org/images/pokemon/${pokemon.id}.png`}
         alt={pokemon.name}

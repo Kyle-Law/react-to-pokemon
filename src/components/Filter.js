@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import seasons from "../constants/seasons";
 
 const Filter = ({ onFilter, season }) => (
-  <div class="season-filter">
+  <div className="season-filter">
     <label htmlFor="season">Season: </label>
     <select id="season" name="season" onChange={onFilter} value={season}>
       <option disabled value="Select Season">

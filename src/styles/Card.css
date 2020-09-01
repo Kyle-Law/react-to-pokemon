@@ -4,6 +4,11 @@ body {
   box-sizing: border-box;
 }
 
+.active,
+.active:hover {
+  color: red;
+}
+
 .filters-container {
   display: flex;
   justify-content: space-evenly;
@@ -54,6 +59,15 @@ body {
   margin: 0;
   color: black;
 }
+
+.social-media-container {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 5px;
+  font-size: 1.3rem;
+  justify-content: space-around;
+}
+
 @media only screen and (max-width: 500px) {
   .ui.inverted.teal.segment {
     display: none;
