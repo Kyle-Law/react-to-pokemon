@@ -93,7 +93,7 @@ footer {
   }
 
   .filters-container {
-    display: flex;
+    display: grid;
   }
 
   .ui[class*="right floated"].header {

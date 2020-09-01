@@ -16,10 +16,12 @@ function Pokemon({ pokemon, match }) {
   return (
     <div className="pokemon-show">
       <h1>{pokemon.name}</h1>
-      <img
-        src={`https://pokeres.bastionbot.org/images/pokemon/${pokemon.id}.png`}
-        alt={pokemon.name}
-      />
+      {pokemon.id && (
+        <img
+          src={`https://pokeres.bastionbot.org/images/pokemon/${pokemon.id}.png`}
+          alt={pokemon.name}
+        />
+      )}
       <div className="pokemon-stat">
         <h3>
           Height:
@@ -72,10 +74,10 @@ Pokemon.propTypes = {
     species: PropTypes.shape({}),
     stats: PropTypes.arrayOf(Object),
     types: PropTypes.arrayOf(Object),
-    weight: PropTypes.string,
-    height: PropTypes.string,
+    weight: PropTypes.number,
+    height: PropTypes.number,
     name: PropTypes.string,
-    id: PropTypes.string,
+    id: PropTypes.number,
   }).isRequired,
   match: PropTypes.shape({
     params: PropTypes.shape({
