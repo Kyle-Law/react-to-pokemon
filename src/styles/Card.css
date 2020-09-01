@@ -99,4 +99,8 @@ footer {
   .ui[class*="right floated"].header {
     display: flex;
   }
+  .ui.raised.segment,
+  .ui.raised.segments {
+    padding: 20px;
+  }
 }
