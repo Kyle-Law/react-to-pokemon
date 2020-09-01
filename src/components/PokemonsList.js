@@ -75,6 +75,10 @@ function PokemonsList({
 PokemonsList.propTypes = {
   pokemons: PropTypes.array.isRequired,
   fetchPokemons: PropTypes.func.isRequired,
+  handleSearch: PropTypes.func.isRequired,
+  handleFilter: PropTypes.func.isRequired,
+  search: PropTypes.string,
+  season: PropTypes.string,
 };
 
 const mapStateToProps = (state) => ({

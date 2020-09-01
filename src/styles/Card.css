@@ -18,6 +18,10 @@ body {
   margin-top: 20px;
 }
 
+.season-filter {
+  font-size: 1.3rem;
+}
+
 .card-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, 150px);

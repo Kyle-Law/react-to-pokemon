@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Contact() {
   return (
@@ -7,12 +8,22 @@ export default function Contact() {
       style={{ marginTop: "80px" }}
     >
       <h3 className="ui header">Contact</h3>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem natus
-        consequatur minima iusto, error obcaecati illum quas voluptatibus
-        aspernatur velit explicabo. Ea quos, dolorem tempore repudiandae quae
-        odit vero temporibus.
-      </p>
+      <Link
+        to={{
+          pathname: "https://github.com/Kyle-Law",
+        }}
+        target="_blank"
+      >
+        GitHub
+      </Link>
+      <Link
+        to={{
+          pathname: "https://www.linkedin.com/in/kyle-lawzhunkhing/",
+        }}
+        target="_blank"
+      >
+        LinkedIn
+      </Link>
     </div>
   );
 }

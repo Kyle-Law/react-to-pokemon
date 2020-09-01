@@ -5,7 +5,7 @@ export default function NavBar() {
   return (
     <nav className="ui raised very padded segment">
       <Link to="/" className="ui teal inverted segment">
-        React to Pokemon
+        React to Pokémon
       </Link>
       <div className="ui right floated header">
         <button className="ui button">

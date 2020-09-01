@@ -5,7 +5,7 @@ const Search = ({ onChange, search }) => (
     type="text"
     onChange={onChange}
     value={search}
-    placeholder="Search Pokemon..."
+    placeholder="Search Pokémon..."
     autoFocus
   />
 );

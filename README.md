@@ -1,68 +1,56 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# React to Pokémon
 
-## Available Scripts
+> A simple pokémon catelogue built by React & Redux with [PokeAPI](https://pokeapi.co/)
 
-In the project directory, you can run:
+User can search or filter pokémon based on season (only 3 seasons are included)
 
-### `yarn start`
+![image](https://user-images.githubusercontent.com/55923773/91823637-1cadd980-ec6c-11ea-9b36-9565b394ff95.png)
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Presentations
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+- View the live version [HERE](https://react-to-pokemon.herokuapp.com/)
+- View the project walkthrough [HERE]()
 
-### `yarn test`
+## Built With
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- React & Redux
 
-### `yarn build`
+## Deployment
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repo
+2. run `npm run i` and `npm start`
+3. Open `http://localhost:3000/`
+4. Enjoy :)
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+<!-- ## Testing
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Run `npm i`
+2. Run `npm test`
+3. `24 passed, 24 total` will be shown. :) -->
 
-### `yarn eject`
+## Authors
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+👤 **Kyle Law**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Github: [@Kyle-Law](https://github.com/Kyle-Law)
+- Twitter: [@Kyle-Law](https://twitter.com/ZhunKhing)
+- Linkedin: [Kyle law](https://www.linkedin.com/in/kyle-lawzhunkhing/)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## 🤝 Contributing
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Contributions, issues and feature requests are welcome!
 
-## Learn More
+Feel free to check the [issues page](https://github.com/Kyle-Law/react-to-pokemon/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc).
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Show your support
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Give a ⭐️ if you like this project!
 
-### Code Splitting
+## Acknowledgments
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+- Microverse
+- [PokeAPI](https://pokeapi.co/)
 
-### Analyzing the Bundle Size
+## 📝 License
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+This project is [MIT](LICENSE) licensed.

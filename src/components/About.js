@@ -8,10 +8,10 @@ export default function About() {
     >
       <h3 className="ui header">About</h3>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem natus
-        consequatur minima iusto, error obcaecati illum quas voluptatibus
-        aspernatur velit explicabo. Ea quos, dolorem tempore repudiandae quae
-        odit vero temporibus.
+        A simple pokémon catelogue built by React & Redux with PokeAPI
+        <br></br>
+        User can search or filter pokémon based on season (only 3 seasons are
+        included)
       </p>
     </div>
   );
