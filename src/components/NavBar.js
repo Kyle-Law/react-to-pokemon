@@ -7,7 +7,7 @@ export default function NavBar() {
       <Link to="/" className="ui teal inverted segment">
         React to Pokémon
       </Link>
-      <div className="ui right floated header">
+      <div className="ui header">
         <button className="ui button">
           <NavLink exact to="/">
             Home
