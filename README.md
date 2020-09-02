@@ -16,6 +16,7 @@ User can search or filter pokémon based on season (only 3 seasons are included)
 ## Built With
 
 - React & Redux
+- Enzyme for Testing
 
 ## Deployment
 
@@ -24,11 +25,11 @@ User can search or filter pokémon based on season (only 3 seasons are included)
 3. Open `http://localhost:3000/`
 4. Enjoy :)
 
-<!-- ## Testing
+## Testing
 
 1. Run `npm i`
-2. Run `npm test`
-3. `24 passed, 24 total` will be shown. :) -->
+2. Run `npm run test a`
+3. `7 passed, 7 total` will be shown. :)
 
 ## Authors
 
