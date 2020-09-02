@@ -1,12 +1,12 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import PokemonsList from './components/PokemonsList';
-import Pokemon from './components/Pokemon';
-import NavBar from './components/NavBar';
-import Footer from './components/Footer';
-import About from './components/About';
-import Connect from './components/Connect';
-import NotFound from './components/NotFound';
+import PokemonsList from './PokemonsList';
+import Pokemon from './Pokemon';
+import NavBar from './NavBar';
+import Footer from './Footer';
+import About from './About';
+import Connect from './Connect';
+import NotFound from './NotFound';
 
 function App() {
   return (
