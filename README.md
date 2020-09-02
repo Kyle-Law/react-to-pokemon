@@ -29,7 +29,7 @@ User can search or filter pokémon based on season (only 3 seasons are included)
 
 1. Run `npm i`
 2. Run `npm run test a`
-3. `7 passed, 7 total` will be shown. :)
+3. `10 passed, 10 total` will be shown. :)
 
 ## Authors
 
