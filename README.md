@@ -11,7 +11,7 @@ User can search or filter pokémon based on season (only 3 seasons are included)
 ## Presentations
 
 - View the live version [HERE](https://react-to-pokemon.herokuapp.com/)
-- View the project walkthrough [HERE]()
+- View the project walkthrough [HERE](https://www.loom.com/share/c5f033db6c5b40c3b0cad82caf45f10a)
 
 ## Built With
 
