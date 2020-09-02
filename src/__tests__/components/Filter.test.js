@@ -13,4 +13,20 @@ describe('<Filter/> component unit tests', () => {
     const component = shallow(<Filter {...props} />);
     expect(component).toHaveLength(1);
   });
+
+  it('should have 4(All, 1,2,3)+1(disabled) options for seasons', () => {
+    const component = shallow(<Filter {...props} />);
+    expect(component.find('option')).toHaveLength(5);
+  });
+
+  it('should have 1 <label > component', () => {
+    const component = shallow(<Filter {...props} />);
+    expect(component.find('label')).toHaveLength(1);
+  });
+
+  it("should have 1 <select> node and season's value is passed", () => {
+    const component = shallow(<Filter {...props} />);
+    expect(component.find('select')).toHaveLength(1);
+    expect(component.find('select').props().value).toEqual('All');
+  });
 });
