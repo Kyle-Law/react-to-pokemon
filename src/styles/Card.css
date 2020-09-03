@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.active,
+.active:hover {
+  color: red;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.filters-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.filters-container input,
+.filters-container select {
+  padding: 8px;
+  width: 200px;
+  justify-self: center;
+  font-size: 1.1rem;
+  margin-top: 20px;
+}
+
+.season-filter {
+  font-size: 1.3rem;
+}
+
+.season-filter label select {
+  margin-left: 10px;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 150px);
+  grid-gap: 20px;
+  padding: 20px;
+  justify-content: center;
+}
+
+.pokemon-card {
+  display: grid;
+  grid-template-rows: 150px max-content;
+  text-decoration: none;
+  background-color: wheat;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: -8px 7px 15px 0 rgba(0, 0, 0, 0.54);
+  transition: 0.2s;
+}
+
+.pokemon-card:hover {
+  filter: brightness(0.9);
+}
+
+.pokemon-card img {
+  width: 100%;
+  height: 100%;
+}
+
+.pokemon-card h4 {
+  margin: 0;
+  color: black;
+}
+
+.social-media-container {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 5px;
+  font-size: 1.3rem;
+  justify-content: space-around;
+}
+
+footer {
+  text-align: right;
+  margin-right: 20px;
+}
+
+@media only screen and (max-width: 500px) {
+  nav {
+    justify-content: center;
+  }
+
+  .ui.inverted.teal.segment {
+    display: none;
+  }
+
+  .filters-container {
+    display: grid;
+  }
+
+  .ui[class*="right floated"].header {
+    display: flex;
+  }
+
+  .ui.raised.segment,
+  .ui.raised.segments {
+    padding: 20px;
+  }
+}
