@@ -1,6 +1,6 @@
 # React to Pokémon
 
-> It's the Capstone Project for Microverse React & Redux section, a simple pokémon catelog for season 1-3, built with React & Redux and [PokeAPI](https://pokeapi.co/)
+> A simple pokémon catelog for season 1-3, built with React & Redux and [PokeAPI](https://pokeapi.co/)
 
 User can search or filter pokémon based on season (only 3 seasons are included)
 
@@ -12,7 +12,6 @@ User can search or filter pokémon based on season (only 3 seasons are included)
 
 - View the live version [HERE](https://react-to-pokemon.herokuapp.com/)
 - View the project walkthrough [HERE](https://www.loom.com/share/924fed8a12d94add8f7e28c1bc1a3457)
-- View the Project Learning Objectives [`HERE`](docs/LearningObjectives.png)
 
 ## Built With
 
